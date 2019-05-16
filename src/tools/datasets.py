@@ -99,7 +99,7 @@ def construct_dataset(source_dir, target_dir):
         for filepath in testsets:
             fw.writelines(('%s\n' % (filepath)).encode('utf8'))
 
-if not os.path.exists(os.path.join('datasets', 'voc')):
-    os.mkdir(os.path.join('datasets', 'voc'))
-construct_label('datasets/VOCdevkit/VOC2012', 'datasets/voc')
-construct_dataset('datasets/VOCdevkit/VOC2012', 'datasets/voc')
+if not os.path.exists(os.path.join('/datasets', 'voc')):
+    os.mkdir(os.path.join('/datasets', 'voc'))
+construct_label('/datasets/VOCdevkit/VOC2012', '/datasets/voc')
+construct_dataset('/datasets/VOCdevkit/VOC2012', '/datasets/voc')
